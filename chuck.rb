@@ -7,18 +7,18 @@ class ChuckJokes
   end
 
   def get_joke_by_id(id)
-    puts ChuckNorris::JokeFinder.find_joke(497)
+    return ChuckNorris::JokeFinder.find_joke(id)
 
   end
 
   def replace_name(name)
-    puts ChuckNorris::JokeFinder.get_joke(first_name: 'Aldane', last_name: 'Purrier')
+    puts ChuckNorris::JokeFinder.get_joke(first_name: 'Aldane', last_name: 'Purrier)
 
 
   end
 
   def random
-    puts ChuckNorris::JokeFinder.get_joke
+    return joke = ChuckNorris::JokeFinder.get_joke
 
   end
 end
