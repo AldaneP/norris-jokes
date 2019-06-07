@@ -12,8 +12,7 @@ class ChuckJokes
   end
 
   def replace_name(name)
-    puts ChuckNorris::JokeFinder.get_joke(first_name: 'Aldane', last_name: 'Purrier)
-
+    return joke = ChuckNorris::JokeFinder.get_joke(first_name: '', last_name: '')
 
   end
 
@@ -26,4 +25,7 @@ end
 jokes = ChuckJokes.new()
 
 
+puts jokes.help
+puts jokes.gets_joke_by_id
+puts jokes.replace_name
 puts jokes.random
